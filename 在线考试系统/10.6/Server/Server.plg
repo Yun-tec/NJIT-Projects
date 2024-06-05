@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Server - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Server.res" /d "_DEBUG" /d "_AFXDLL" "D:\Desktop\10\10.6\Server\Server.rc"" 
+Creating temporary file "C:\Users\zry2001\AppData\Local\Temp\RSPF124.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Server.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Desktop\10\10.6\Server\ClientContext.cpp"
+"D:\Desktop\10\10.6\Server\ClientManager.cpp"
+"D:\Desktop\10\10.6\Server\MainFrm.cpp"
+"D:\Desktop\10\10.6\Server\Server.cpp"
+"D:\Desktop\10\10.6\Server\ServerAddrDlg.cpp"
+"D:\Desktop\10\10.6\Server\ServerDoc.cpp"
+"D:\Desktop\10\10.6\Server\ServerView.cpp"
+]
+Creating command line "cl.exe @C:\Users\zry2001\AppData\Local\Temp\RSPF124.tmp" 
+Creating temporary file "C:\Users\zry2001\AppData\Local\Temp\RSPF125.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Server.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Desktop\10\10.6\Server\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\zry2001\AppData\Local\Temp\RSPF125.tmp" 
+Creating temporary file "C:\Users\zry2001\AppData\Local\Temp\RSPF126.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Server.pdb" /debug /machine:I386 /out:"Debug/Server.exe" /pdbtype:sept 
+.\Debug\ClientContext.obj
+.\Debug\ClientManager.obj
+.\Debug\MainFrm.obj
+.\Debug\Server.obj
+.\Debug\ServerAddrDlg.obj
+.\Debug\ServerDoc.obj
+.\Debug\ServerView.obj
+.\Debug\StdAfx.obj
+.\Debug\Server.res
+]
+Creating command line "link.exe @C:\Users\zry2001\AppData\Local\Temp\RSPF126.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+d:\desktop\10\10.6\server\debug\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+ClientContext.cpp
+ClientManager.cpp
+MainFrm.cpp
+Server.cpp
+ServerAddrDlg.cpp
+ServerDoc.cpp
+ServerView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Server.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
