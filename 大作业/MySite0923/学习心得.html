@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学习心得</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+
+        .carousel-inner {
+            margin-top: 40px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 600px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /*设置水平导航栏*/
+        ul.level {
+            font-family: 华文行楷;
+            font-size: xx-large;
+            list-style-type: none;
+            margin-top: 10px;
+            padding: 0;
+            /*overflow: hidden;*/
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /*设置圆角边框*/
+            border-radius: 10px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+
+<!--滑动轮播-->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- 轮播指标 -->
+
+    <ul class="carousel-indicators">
+
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image/HTML.png" alt="HTML展示图">
+        </div>
+        <div class="carousel-item">
+            <img src="image/css.png" alt="css展示图">
+        </div>
+        <div class="carousel-item">
+            <img src="image/js.png" alt="js展示图">
+        </div>
+    </div>
+    <!-- 左右切换按钮 -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!--创建导航栏-->
+<div>
+    <ul class="level" >
+        <li><a class="active" href="学习心得.html">学习心得</a></li>
+        <li><a href="典型实验.html">典型实验</a></li>
+        <li><a href="资源推荐.html">资源推荐</a></li>
+        <li><a href="#contact" onclick="noWeb()">更多内容</a></li>
+        <li style="float: right"><a href="#"><img src="image/个人信息.png">个人信息</a></li>
+        <script>
+            function noWeb() {
+                alert("该页面还在装修中")
+            }
+        </script>
+    </ul>
+</div>
+<hr>
+<!--通过iframe依次插入三个PDF-->
+<div>
+    <ul>
+        <li>CSS 指的是层叠样式表* (Cascading Style Sheets)</li>
+        <br>
+        <li>CSS 描述了如何在屏幕、纸张或其他媒体上显示 HTML 元素</li>
+        <br>
+        <li>CSS 节省了大量工作。它可以同时控制多张网页的布局</li>
+        <br>
+        <li>外部样式表存储在 CSS 文件中</li>
+    </ul>
+</div>
+
+<h2>以下是CSS的思维导图</h2>
+<hr>
+<iframe id="csspdf"
+        src="思维导图/css.pdf"
+        width="100%" height="1000" frameborder="0">
+</iframe>
+<hr>
+<div>
+    HTML的全称为超文本标记语言，是一种标记语言。它包括一系列标签．通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等
+</div>
+<br>
+<h2>以下是HTML的思维导图</h2>
+<hr>
+<iframe id="htmlodf"
+        src="思维导图/html.pdf"
+        width="100%" height="1000" frameborder="0">
+
+</iframe>
+<hr>
+<div>
+    JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的 编程语言 。 虽然它是作为开发 Web 页面的 脚本语言 而出名，但是它也被用到了很多非 浏览器 环境中，JavaScript 基于原型编程、多范式的动态脚本语言，并且支持 面向对象 、命令式、声明式、 函数 式编程范式。
+</div>
+<h2>以下是JavaScript的思维导图</h2>
+<hr>
+<iframe id="jspdf"
+        src="思维导图/js.pdf"
+        width="100%" height="1000" frameborder="0">
+</iframe>
+
+</body>
+</html>

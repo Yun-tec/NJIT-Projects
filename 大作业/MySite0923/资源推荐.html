@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资源推荐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /*设置水平导航栏*/
+        ul.level {
+            font-family: 华文行楷;
+            font-size: xx-large;
+            list-style-type: none;
+            margin-top: 10px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            /*position: fixed;*/
+            top: 0;
+            width: 100%;
+            /*设置圆角边框*/
+            border-radius: 10px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+        #startColour {
+            height: 400px;
+            /* 针对不支持渐变的浏览器 */
+            background-color: red;
+            /*采用渐绿变色*/
+            background-image: linear-gradient(to right, #b1dfbb, #20c997);
+        }
+
+        /*设置标题“阅读”并设置格式*/
+        h3 {
+            margin-left: 100px;
+            font-weight: bolder;
+            font-size: 130px;
+            font-family: 华文行楷;
+            color: white;
+            margin-top: 0px;
+        }
+
+        /*设置名人名言*/
+        #startColour p, span {
+            margin-left: 100px;
+            font-weight: bolder;
+            font-family: 隶书;
+            font-size: 50px;
+        }
+        .container img{
+            width: 348px;
+            height: 468px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul class="level">
+        <li><a href="学习心得.html">学习心得</a></li>
+        <li><a href="典型实验.html">典型实验</a></li>
+        <li><a  class="active" href="资源推荐.html">资源推荐</a></li>
+        <li><a href="#contact" onclick="noWeb()">更多内容</a></li>
+        <li style="float: right"><a href="#"><img src="image/个人信息.png">个人信息</a></li>
+        <script>
+            function noWeb() {
+                alert("该页面还在装修中")
+            }
+
+
+        </script>
+    </ul>
+</div>
+<div id="startColour">
+    <h3>阅读</h3>
+    <p>发奋识遍天下字，立志读尽人间书。</p>
+    <span style="margin-left: 800px">——苏轼</span>
+</div>
+<!--设置分隔符-->
+<hr>
+<!--用bootstrap实现卡片式布局-->
+<div class="container">
+    <!--    第一行布局-->
+    <div class="row">
+        <div class="card  col-md-4" style="width: 18rem;">
+            <img src="image/book/伊索寓言.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">《伊索寓言》中收录有300多则寓言，内容大多与动物有关。书中讲述的故事简短精练，刻画出来的形象鲜明生动，每则故事都蕴含哲理，或揭露和批判社会矛盾，或抒发对人生的领悟，或总结日常生活经验。</p>
+            </div>
+        </div>
+
+        <div class="card col-md-4">
+            <img src="image/book/白蔷会.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">白蔷会的标志是一朵白色的蔷薇，寓意这个世界看上去像白金蔷薇一样诱人，实际上却是带刺的。这个兄弟会的宗旨是一句古老的拉丁文谚语“A fronte praecipitium a tergo lupi.”</p>
+            </div>
+        </div>
+
+        <div class="card col-md-4">
+            <img src="image/book/秋海棠.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">这是一部描写军阀时期，一个唱旦角的京剧艺术人秋海棠到天津唱戏时遇上麻烦，就去他的靠山袁镇守使家希望碰上袁镇守。</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+<!--第二行图书-->
+    <div class="row">
+        <div class="card  col-md-4" style="width: 18rem;">
+            <img src="image/book/三体.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">作品讲述了地球人类文明和三体文明的信息交流、生死搏杀及两个文明在宇宙中的兴衰历程。其第一部经过刘宇昆翻译后获得了第73届雨果奖最佳长篇小说奖 </p>
+            </div>
+        </div>
+        <div class="card  col-md-4" style="width: 18rem;">
+            <img src="image/book/百年孤独.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">《百年孤独》，是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，是其代表作，也是拉丁美洲魔幻现实主义文学的代表作，被誉为“再现拉丁美洲历史社会图景的鸿篇巨著”。</p>
+            </div>
+        </div>
+        <div class="card  col-md-4" style="width: 18rem;">
+            <img src="image/book/月亮与六便士.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">高高在上的月亮，圣洁明朗又遥远，就像我们的理想，而六便士是英国价值最低的银币，代表着世俗和卑微。 月亮和六便士都是圆形的，都是闪闪发光的，但本质却完全不同，或许它们就象征着理想和现实，精神和物质。 </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style>
+        .denglu {
+            width: 600px;
+            background: rgba(255, 255, 255, 0.99);
+            box-shadow: 20px 20px rgb(0,0,0,0.3);
+            margin: auto;
+            position: absolute;
+            margin-top: 100px;
+            left: 0;
+            right: 0;
+            border-radius: 25px; /*圆角边框*/
+            visibility: visible;
+
+        }
+
+        .denglu,.enroll img {
+            border: none;
+            border-radius: 25px;/*圆角边框*/
+        }
+
+        h3 {
+            font-family: "华文行楷";
+            font-size: xx-large;
+            margin-top: 100px;
+            margin-left: 320px;
+
+        }
+        .user,.pass,.userName,.emailAddress{
+            width: 220px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 5px;
+
+        }
+        .userName{
+            background: url("image/账号.png") no-repeat  -1px center;
+            text-indent: 31px;
+        }
+        .user{
+            background: url("image/用户2.png") no-repeat  1px center;
+            text-indent: 31px;
+        }
+        .pass{
+            background: url("image/密码.png") no-repeat  -2px center;
+            text-indent: 31px;
+        }
+        .emailAddress{
+            background: url("image/邮箱.png") no-repeat  -2px center;
+            text-indent: 31px;
+        }
+        .buttondeng,#q2{
+            width: 220px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 5px;
+            background: aliceblue;
+        }
+.enroll{
+    width: 600px;
+    background: rgba(255, 255, 255, 0.99);
+    box-shadow: 20px 20px rgb(0,0,0,0.3);
+    margin: auto;
+    position: absolute;
+    margin-top: 100px;
+    left: 0;
+    right: 0;
+    border-radius: 25px; /*圆角边框*/
+    visibility: hidden;
+}
+#q1{
+    font-family: 华光细圆_CNKI;
+    border: white;
+    margin-left: 320px;
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: smaller;
+    border: #cb1414;
+    border-width: 10px;
+
+}
+
+    </style>
+</head>
+<body>
+<!--添加动态三维背景-->
+<script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+
+<div class="denglu" id="login1">
+    <div style="float: left">
+        <img src="image/雪山.jpg" width="300">
+    </div>
+    <div class="login">
+            <h3>
+                欢迎来到MySite
+            </h3>
+        <form>
+            <input type="text"  class="user" placeholder="请输入账号">
+            <input type="password" placeholder="请输入密码" class="pass">
+        </form>
+        <br>
+          <input type="button" value="登录" class="buttondeng" onclick="turnTo()"  >
+        <script>
+function turnTo() {
+    location.href='学习心得.html'
+}
+        </script>
+       <p onclick="enroll()" id="q1">没有账号？还不赶紧注册下！</p>
+        <script>
+            function enroll() {
+                document.getElementById("login1").style.visibility="hidden"
+                document.getElementById("login2").style.visibility="visible"
+            }
+        </script>
+    </div>
+</div>
+<div class="enroll" id="login2">
+    <div style="float: left">
+        <img src="image/樱花树.png" width="300">
+    </div>
+    <div class="login">
+        <h3 style="margin-top: 40px">
+            注册MySite
+        </h3>
+        <form>
+            <input type="text" class="userName" placeholder="请输入用户名">
+            <input type="text"  class="user" placeholder="请输入注册账号">
+        <input type="password" placeholder="请输入注册密码" class="pass">
+            <input type="email" placeholder="请输入注册邮箱" class="emailAddress">
+        </form>
+        <br>
+        <input type="reset" value="重新填写" class="buttondeng"   >
+
+  <button onclick="successSub()" id="q2">提交注册</button>
+<!--        在登录和注册两个页面进行切换-->
+        <script>
+            function successSub() {
+                // 登录界面显示，隐藏注册页面
+                document.getElementById("login2").style.visibility='hidden'
+                document.getElementById("login1").style.visibility='visible'
+                alert("注册成功，即将跳往登录页面")
+            }
+        </script>
+    </div>
+</div>
+</body>
+</html>
